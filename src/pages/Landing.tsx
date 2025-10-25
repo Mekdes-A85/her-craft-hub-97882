@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Sparkles, ShoppingBag, MessageSquare, Truck } from "lucide-react";
-
 const Landing = () => {
-  return (
-    <div className="min-h-screen bg-gradient-hero">
+  return <div className="min-h-screen bg-gradient-hero">
       {/* Header */}
       <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
@@ -25,7 +23,8 @@ const Landing = () => {
       <section className="container mx-auto px-4 py-20 text-center">
         <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
           Empowering Ethiopian<br />
-          <span className="text-primary">Women Artisans</span>
+          <span className="text-primary">Women Entrepreneurs 
+        </span>
         </h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Connect with talented craftswomen creating beautiful pottery, handwoven textiles, 
@@ -98,8 +97,6 @@ const Landing = () => {
       <footer className="container mx-auto px-4 py-8 text-center text-muted-foreground border-t border-border mt-16">
         <p>&copy; 2025 HerTrade. Empowering women entrepreneurs across Ethiopia.</p>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Landing;
